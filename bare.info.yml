@@ -1,0 +1,8 @@
+name: Bare
+type: theme
+description: 'This theme is meant to be bare, not many assumptions, certainly no styles, and most certainly no hacking.'
+package: Core
+version: VERSION
+core: 8.x
+stylesheets-remove:
+  - normalize.css
