@@ -1,0 +1,4 @@
+name = Bare
+description = 'This theme is meant to be bare, not many assumptions, certainly no styles, and most certainly no hacking.'
+version = VERSION
+core = 7.x
