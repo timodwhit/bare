@@ -4,6 +4,3 @@ description: 'This is a bare subtheme. It is meant to be the skeleton to awesome
 version: 8.x-1.0alpha
 base: Bare
 core: 8.x
-stylesheets-remove:
-  - normalize.css
-
