@@ -1,0 +1,48 @@
+////////////////////////
+// Style Guide Partials
+//
+// Your Style Guide
+//
+// The layout of this structure is based on the elements found in
+// http://drupal.org/project/styleguide
+//
+// The styleguide in this theme is designed to be the reset of the styles,
+// but should be customized to each theme so a full reset (like normalize) is
+// not needed. Those resets add extra weight and overriding of style that most
+// likely, the web designer never intended.
+////////////////////////
+
+//////////////////////////////
+// CSS Resets
+//
+// Choose your CSS Reset method:
+//  If you'd like a hard reset, uncomment `compass/reset`.
+//  If you'd prefer a soft reset, uncomment `compass-normalize`
+//////////////////////////////
+// @import 'compass/rest';
+// @import 'normalize';
+
+////
+// Text
+////
+@import "text";
+
+//////////
+// Forms
+/////////
+@import 'forms';
+
+//Styleguid module layout
+@import 'buttons';
+@import "comment";
+@import "common";
+@import "link";
+@import "list";
+@import "media";
+@import "menus";
+@import "search";
+@import "system";
+@import "tables";
+@import "user_interface";
+
+

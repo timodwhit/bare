@@ -1,0 +1,41 @@
+////////////////////////
+// Example Layout
+//
+// Here is a skeleton layout that uses the variables from ../base/variables.scss
+// to create a layout. To have this functioning out of the box. Duplicate it,
+// And add it to your layout.scss, using @import. This is a good starting point,
+// but is by no means a final.
+//
+// This layout requires Singularity.gs as a compass gem.
+////////////////////////
+%container{
+  width:$container_width;
+  margin:0 auto; //Center the page, this may not be wanted.
+}
+.container{
+  @extend %container;
+  @include layout($grids, $gutters, 'isolation');
+}
+//The sidebar Locations are static
+#sidebar-first{
+  @include grid-span($sidebar_first_columns,1);
+}
+#sidebar-second{
+  @include grid-span($sidebar_second_columns,$grids - $sidebar_first_columns + 1);
+}
+//Create different positionings of Main
+#main{
+  .sidebar-first &{
+    @include grid-span($grids - $sidebar_first_columns,$sidebar_first_columns + 1);
+  }
+  .sidebar-second &{
+    @include grid-span($grids - $sidebar_second_columns,1);
+  }
+  .two-sidebars &{
+    @include grid-span($grids - $sidebar_first_columns - $sidebar_second_columns ,$sidebar_first_columns + 1);
+  }
+}
+
+#header, #footer{
+  @include grid-span($grids, 1);
+}
