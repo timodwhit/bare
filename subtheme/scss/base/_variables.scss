@@ -38,6 +38,7 @@ $courier:         "Courier New", monospace, sans-serif;
 
 // These font sizes are all in rem, if you don't like it, the easiest way to
 // change it is to alter the mixin and drop the rem line.
+
 $base-font-size: 1.6;
 $base-line-height: 1;
 $h1-size:3.0;
@@ -53,7 +54,7 @@ $h3-color:$inherit;
 $h4-color:$inherit;
 $h5-color:$inherit;
 $h6-color:$inherit;
-
+//
 $h1-family:$times;
 $h2-family:$times;
 $h3-family:$times;
