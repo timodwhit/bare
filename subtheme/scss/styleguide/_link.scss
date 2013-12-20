@@ -1,0 +1,56 @@
+/**
+ * Link
+ */
+a {
+
+  &:link {
+    color: $link;
+  }
+
+  &:visited {
+    color: $visited;
+  }
+
+  &:hover, &:focus {
+
+  }
+
+  &:active, &.active {
+
+  }
+}
+/**
+ * Links
+ */
+li a{
+  &.active{
+
+  }
+}
+/**
+ * Mark, new
+ */
+.marker{
+  a{
+
+  }
+}
+/**
+ * Mark, updated
+ */
+/**
+ * More help link
+ */
+.more-help-link{
+  a{
+
+  }
+}
+ /**
+ * More link
+ */
+.more-link{
+  a{
+
+  }
+}

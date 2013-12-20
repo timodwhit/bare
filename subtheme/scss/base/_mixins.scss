@@ -1,0 +1,46 @@
+////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+////////////////////////
+
+////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+////////////////////////
+@mixin clear() {
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin rem($size, $attribute:font-size){
+  #{$attribute}: ($size * 10) + px;
+  #{$attribute}: $size + rem;
+}
+//This is a friendly mixin, not used unless you use it.
+@mixin sticky_footer($height:125px){
+  html, body{
+  height:100%;
+  }
+  #main-region {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -($height);
+  }
+  #main-region:after {
+    content: "";
+    display: block;
+  }
+  footer, #main-region:after {
+    /* .push must be the same height as footer */
+    height: $height;
+  }
+}
