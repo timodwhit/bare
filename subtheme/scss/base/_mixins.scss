@@ -1,14 +1,9 @@
-////////////////////////
-// Mixins Partials
-//
-// All of your mixins should go in this file.
-////////////////////////
+/**
+ * Mixins
+ *
+ * Most of your mixins go here.
+ */
 
-////////////////////////
-// Mixins Partials
-//
-// All of your mixins should go in this file.
-////////////////////////
 @mixin clear() {
     &:before, &:after {
         content: "\0020";
@@ -30,16 +25,16 @@
   html, body{
   height:100%;
   }
-  #main-region {
+  main {
     min-height: 100%;
     /* equal to footer height */
     margin-bottom: -($height);
   }
-  #main-region:after {
+  main:after {
     content: "";
     display: block;
   }
-  footer, #main-region:after {
+  footer, main:after {
     /* .push must be the same height as footer */
     height: $height;
   }
