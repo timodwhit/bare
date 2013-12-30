@@ -1,0 +1,16 @@
+/**
+ * Basic Print File
+ *
+ * This print file imports base and styleguide settings, while ignoring the rest
+ * of the layout, structure, etc. The point of this is to make your print files
+ * pretty.
+ *
+ * Here is a good article about print stylesheets:
+ * http://coding.smashingmagazine.com/2011/11/24/how-to-set-up-a-print-style-sheet/
+ *
+ * If you are lazy and didn't read that, basically hide stuff that people don't
+ * need on a piece of paper(ie - Ads, menus, etc).
+ */
+
+@import 'base/base';
+@import 'styleguide/styleguide';
