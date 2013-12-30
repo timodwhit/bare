@@ -58,7 +58,7 @@ h4 {
   @include rem($h4-size);
 //   @include font-family($h4-family);
 //   @include font-color($h4-color);
-// }
+}
 
 h5 {
   @include rem($h5-size);

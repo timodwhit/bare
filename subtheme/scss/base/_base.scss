@@ -6,7 +6,7 @@
 // If you have questions about any of those things, refer to the SCSS documentation.
 ////
 
-@include 'variables';
-@include 'mixins';
-@include 'functions';
-@include 'extendables';
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+@import 'extendables';
