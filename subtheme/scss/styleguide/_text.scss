@@ -37,7 +37,7 @@ blockquote{
 }
 
 h1 {
-  @include rem($h1size);
+  @include rem($h1-size);
   // @include font-family($h1-family);
   // @include font-color($h1-color);
 }
