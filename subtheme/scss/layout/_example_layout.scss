@@ -17,14 +17,14 @@
   @include layout($grids, $gutters, 'isolation');
 }
 //The sidebar Locations are static
-#sidebar-first{
+.l-sidebar-first{
   @include grid-span($sidebar_first_columns,1);
 }
-#sidebar-second{
+.l-sidebar-second{
   @include grid-span($sidebar_second_columns,$grids - $sidebar_first_columns + 1);
 }
 //Create different positionings of Main
-#main{
+main{
   .sidebar-first &{
     @include grid-span($grids - $sidebar_first_columns,$sidebar_first_columns + 1);
   }
@@ -36,6 +36,6 @@
   }
 }
 
-#header, #footer{
+header, footer{
   @include grid-span($grids, 1);
 }
