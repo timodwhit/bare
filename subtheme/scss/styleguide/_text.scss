@@ -1,0 +1,73 @@
+/**
+ * General Text Formatting
+ */
+html{
+  //Uncomment below if you would like to use rems
+  font-size:62.5%;
+}
+body {
+  //This will make text pretty across browsers
+  //and match what clients tend to want
+  // text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  //If speed is a concern uncomment.
+  //text-rendering: optimizeSpeed;
+  // -webkit-font-smoothing: none;
+  // -webkit-font-smoothing: subpixel-antialiased;
+  font-family: $font-body;
+  //This mixin will allow for rems but defaults to px.
+  @include rem($base-font-size);
+  line-height: $base-line-height;
+
+}
+
+/**
+ * Blockquote
+ */
+blockquote{
+  &:before {
+  }
+}
+/**
+ * Headings
+ */
+
+#{headings()} {
+
+}
+
+h1 {
+  @include rem($h1-size);
+  // @include font-family($h1-family);
+  // @include font-color($h1-color);
+}
+
+h2 {
+  @include rem($h2-size);
+  // @include font-family($h2-family);
+  // @include font-color($h2-color);
+}
+
+h3 {
+  @include rem($h3-size);
+  // @include font-family($h3-family);
+  // @include font-color($h3-color);
+}
+
+h4 {
+  @include rem($h4-size);
+//   @include font-family($h4-family);
+//   @include font-color($h4-color);
+}
+
+h5 {
+  @include rem($h5-size);
+  // @include font-family($h5-family);
+  // @include font-color($h5-color);
+}
+
+h6 {
+  @include rem($h6-size);
+  // @include font-family($h6-family);
+  // @include font-color($h6-color);
+}

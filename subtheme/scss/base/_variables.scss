@@ -1,0 +1,128 @@
+////
+//  Variables Partials
+////
+
+$inherit: inherit;
+
+////
+// Colors
+////
+$white: #fff;
+$gray_90: #E5E5E5;
+$gray_80: #CCC;
+$gray_70: #B3B3B3;
+$gray_60: #999;
+$gray_50: #7F7F7F;
+$gray_40: #666;
+$gray_30: #4D4D4D;
+$gray_20: #333;
+$gray_10: #1A1A1A;
+$black: #000;
+
+
+////
+// Font Sizes, Color, Family
+////
+
+////
+// Font Families
+////
+$times-new-roman: "Times New Roman", Times, Georgia, serif;
+$times:           Times, "Times New Roman", Georgia, serif;
+$georgia:         Georgia, "Times New Roman", serif;
+$verdana:         Verdana, Tahoma, sans-serif;
+$tahoma:          Tahoma, Verdana, sans-serif;
+$helvetica:       Helvetica, Arial, sans-serif;
+$arial:           Arial, Helvetica, sans-serif;
+$courier:         "Courier New", monospace, sans-serif;
+
+// These font sizes are all in rem, if you don't like it, the easiest way to
+// change it is to alter the mixin and drop the rem line.
+
+$base-font-size: 1.6;
+$base-line-height: 1;
+$h1-size:3.0;
+$h2-size:2.6;
+$h3-size:2.4;
+$h4-size:2.0;
+$h5-size:1.8;
+$h6-size:1.6;
+//Color
+$h1-color:$inherit;
+$h2-color:$inherit;
+$h3-color:$inherit;
+$h4-color:$inherit;
+$h5-color:$inherit;
+$h6-color:$inherit;
+//
+$h1-family:$times;
+$h2-family:$times;
+$h3-family:$times;
+$h4-family:$times;
+$h5-family:$times;
+$h6-family:$times;
+
+
+// Now create some variables for the font stacks we want to use on this site.
+$base-font-family: $georgia; // The font family set on the html element.
+$font-body:        $verdana;
+$font-monospace:   $courier;
+$form-font-family: $arial;
+
+
+/**
+ *Colors
+ */
+//Grays: These are here just to help with common gray shades
+
+
+// Base color variables.
+$link           : #2090B4;
+$visited        : $link;
+$selection-bg   : #66B360;
+$selection      : $white;
+
+// Add Singularity responsive layout settings.
+//
+// Singularity allows the creation of responsive grids within your site's layout
+// Go to the singularity github wiki for full implementation, and how to
+// integrate it with breakpoint as well.
+//
+// @see https://github.com/Team-Sass/Singularity/wiki
+
+$mobile-first         : true;
+$include-border-box   : false;
+$include-clearfix     : false;
+
+$grids                  : 12;
+$gutters                : 1/3;
+$sidebar_first_columns  : 3;
+$sidebar_second_columns : 3;
+
+//Layout Variables
+$container_width: 960px;
+
+
+// Add breakpoint settings.
+//
+// Breakpoint allows us to embed media queries directly into each rule that
+// needs it, rather than forcing a developer to place rules for a single
+// component in multiple places depending on the media query they want to
+// affect.
+//
+// @see https://github.com/Team-Sass/breakpoint/wiki
+//
+// Listed here are named breakpoints. They can vary in complexity, allowing you to
+// get rid of the cognitive load behind typing and remembering media queries.
+//
+// @see https://github.com/Team-Sass/breakpoint/wiki/Respond-To
+// $sample-breakpoints: "small-ish" (300px),
+//                      "medium-ish" (460px),
+//                      "large-ish" (770px),
+//                      "extra-large-ish" (1000px);
+
+
+$breakpoint-no-query-fallbacks: true;
+$breakpoint-to-ems: true;
+
+$breakpoints: '';

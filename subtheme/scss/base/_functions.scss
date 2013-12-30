@@ -1,0 +1,11 @@
+////
+// Functions
+//
+// Functions can be wickedly powerful pieces of awesomeness. Learn em and love em.
+///
+
+@function font-family($family){
+  @if ($family != 'inherit') {
+    @return $family
+  }
+}
