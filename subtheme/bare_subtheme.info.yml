@@ -2,7 +2,7 @@ name: Bare Subtheme
 type: theme
 description: 'This is a bare subtheme. It is meant to be the skeleton to awesomeness'
 version: 8.x-1.0alpha
-base: Bare
+base theme: bare
 core: 8.x
 stylesheets:
   all:
