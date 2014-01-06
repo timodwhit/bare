@@ -1,9 +1,6 @@
-####
-# #   #
-####        #     ###  ###
-##    #    #  #   #      ##
-#####  #     #  #      ###
-===============
+**
+* Bare
+******
 
 Bare is a subtheme skeleton for Drupal. The purpose of this theme is to be simpilfied down to Stark,
 but provide a solid starting point for advanced theming without making large assumptions.
