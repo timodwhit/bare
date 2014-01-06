@@ -15,6 +15,7 @@ To use the Bare Subtheme here are the assumptions:
 4) You use Bundler. [http://bundler.io/]
 5) You use the box model that makes sense.
 6) Core tpls/functionality while they sucked in the past, may be the best options for the future usability of your site.
+7) Singlularitygs is our initial grid system out of the box. However, you can change this easily, just check your gems.
 
 #####
 # To compile your theme do this:
