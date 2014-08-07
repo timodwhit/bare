@@ -14,5 +14,9 @@ To use this theme:
 
 1) Copy the bare_subtheme folder into sites/all/themes or your respective theme directory.
 2) Rename the theme folder to your theme name of choice [ex: awesome_bareness]
-3) Rename the .info.yml file to the same name as your folder. [ex: awesome_bareness.info.yml]
+3) Rename the .info file to the same name as your folder.
+[ex: awesome_bareness.info]
 4) Theme away and start rejoicing at all the options you have.
+
+The SCSS partial is based off of the SCSS-skeleton found here:
+http://github.com/timodwhit/scss-skeleton
