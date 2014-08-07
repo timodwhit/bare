@@ -1,7 +1,12 @@
 <?php
 
 /**
- * Implements hook_preprocess_html(&$vars).
+ * @file
+ * Controls local theme overrides.
+ */
+
+/**
+ * Implements hook_preprocess_html().
  */
 function bare_subtheme_preprocess_html(&$vars) {
   // Viewport setting.
