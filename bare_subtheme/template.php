@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 /**
  * Implementing hook_preprocess_html(&$vars).
@@ -6,6 +7,13 @@
 
 function bare_subtheme_preprocess_html(&$vars) {
   // Viewport setting.
+=======
+/**
+* hook_preprocess_html(&$vars)
+*/
+function bare_subtheme_preprocess_html($vars) {
+  // Viewport
+>>>>>>> 4c50d374f49038212b3f0266968c89f5b226a46f
   $viewport = array(
     '#tag' => 'meta',
     '#attributes' => array(
