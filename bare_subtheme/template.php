@@ -3,7 +3,6 @@
 /**
  * Implements hook_preprocess_html(&$vars).
  */
-
 function bare_subtheme_preprocess_html(&$vars) {
   // Viewport setting.
   $viewport = array(
