@@ -12,7 +12,8 @@ etc.
 
 To use this theme:
 
-1) Copy the bare_subtheme folder into sites/all/themes or your respective theme directory.
+1) Copy the bare_subtheme folder into sites/all/themes or your respective theme
+directory.
 2) Rename the theme folder to your theme name of choice [ex: awesome_bareness]
 3) Rename the .info file to the same name as your folder.
 [ex: awesome_bareness.info]
