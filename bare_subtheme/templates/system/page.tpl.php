@@ -115,10 +115,10 @@
        'links' => $main_menu,
         'attributes' => array(
           'id' => 'main-menu',
-          'class' => array( 'links', 'inline', 'clearfix'),
-          'role' => 'navigation'
+          'class' => array('links', 'inline', 'clearfix'),
+          'role' => 'navigation',
         ),
-        'heading' => t('Main menu')
+        'heading' => t('Main menu'),
       )
     ); ?>
     <?php print theme(
@@ -127,9 +127,9 @@
         'links' => $secondary_menu,
         'attributes' => array(
           'id' => 'secondary-menu',
-          'class' => array('links', 'inline', 'clearfix')
+          'class' => array('links', 'inline', 'clearfix'),
         ),
-        'heading' => t('Secondary menu')
+        'heading' => t('Secondary menu'),
       )
     ); ?>
     </div>
@@ -193,4 +193,3 @@
     <?php print render($page['footer']); ?>
   </div>
 </footer>
-

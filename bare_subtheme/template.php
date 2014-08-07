@@ -1,10 +1,11 @@
 <?php
 
- /**
-  * hook_preprocess_html(&$vars)
-  */
- function bare_subtheme_preprocess_html(&$vars) {
-    // Viewport
+/**
+ * Implementing hook_preprocess_html(&$vars).
+ */
+
+function bare_subtheme_preprocess_html(&$vars) {
+  // Viewport setting.
   $viewport = array(
     '#tag' => 'meta',
     '#attributes' => array(
@@ -23,4 +24,4 @@
     ),
   );
   drupal_add_html_head($xua, 'x-ua-compatible');
- }
+}
