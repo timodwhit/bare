@@ -34,13 +34,13 @@
     min-height: 100%;
     /* equal to footer height */
     margin-bottom: -($height);
+    &:after {
+      content: "";
+      display: block;
+    }
   }
-  #main-region:after {
-    content: "";
-    display: block;
-  }
-  footer, #main-region:after {
-    /* .push must be the same height as footer */
+  #footer, #main-region:after {
+    /* the after must be the same height as footer */
     height: $height;
   }
 }
