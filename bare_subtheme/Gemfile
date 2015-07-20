@@ -1,5 +1,8 @@
 # Pull gems from RubyGems
 source 'https://rubygems.org'
-gem 'singularitygs', '~>1.0.7'
-gem 'breakpoint', '~>2.0.2'
-gem 'compass-normalize', '~>1.4.3'
+gem "sass", "~>3.3"
+gem "compass", "~>1.0.3"
+gem 'singularitygs', '~>1.6.2'
+gem 'breakpoint', '~>2.4'
+gem 'compass-normalize', '~>1.5'
+gem 'json', '~>1.8.3'
