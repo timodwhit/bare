@@ -37,37 +37,32 @@ blockquote{
 }
 
 h1 {
-  @include rem($h1-size);
-  // @include font-family($h1-family);
-  // @include font-color($h1-color);
+  // @include rem($h1-size);
+  // font-family: $h1-family;
 }
 
 h2 {
-  @include rem($h2-size);
-  // @include font-family($h2-family);
-  // @include font-color($h2-color);
+  // @include rem($h2-size);
+  // font-family: $h2-family;
 }
 
 h3 {
-  @include rem($h3-size);
-  // @include font-family($h3-family);
-  // @include font-color($h3-color);
+  // @include rem($h3-size);
+  // font-family: $h3-family;
 }
 
 h4 {
-  @include rem($h4-size);
-//   @include font-family($h4-family);
-//   @include font-color($h4-color);
+  // @include rem($h4-size);
+  // font-family: $h4-family;
 }
 
 h5 {
-  @include rem($h5-size);
-  // @include font-family($h5-family);
-  // @include font-color($h5-color);
+  // @include rem($h5-size);
+  // font-family: $h5-family;
 }
 
 h6 {
-  @include rem($h6-size);
-  // @include font-family($h6-family);
+  // @include rem($h6-size);
+  // font-family: $h3-family;
   // @include font-color($h6-color);
 }

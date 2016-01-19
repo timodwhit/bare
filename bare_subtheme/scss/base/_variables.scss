@@ -1,12 +1,9 @@
-////
-//  Variables Partials
-////
-
+/**
+ * Variables Partial
+ */
 $inherit: inherit;
 
-////
 // Colors
-////
 $white: #fff;
 $gray_90: #E5E5E5;
 $gray_80: #CCC;
@@ -19,14 +16,13 @@ $gray_20: #333;
 $gray_10: #1A1A1A;
 $black: #000;
 
+/**
+ * Font Sizes, Color, Family
+ */
 
-////
-// Font Sizes, Color, Family
-////
-
-////
-// Font Families
-////
+/**
+ * Font Families
+ */
 $times-new-roman: "Times New Roman", Times, Georgia, serif;
 $times:           Times, "Times New Roman", Georgia, serif;
 $georgia:         Georgia, "Times New Roman", serif;
@@ -36,25 +32,40 @@ $helvetica:       Helvetica, Arial, sans-serif;
 $arial:           Arial, Helvetica, sans-serif;
 $courier:         "Courier New", monospace, sans-serif;
 
-// These font sizes are all in rem, if you don't like it, the easiest way to
-// change it is to alter the mixin and drop the rem line.
-
+/**
+ * Vertical Rhythm.
+ *
+ * To make use of this, you will need to load up the compass library and import
+ * it.
+ *
+ * Learn More: http://compass-style.org/reference/compass/typography/vertical_rhythm/
+ * Plain English: http://atendesigngroup.com/blog/vertical-rhythm-compass
+ */
 $base-font-size: 1.6;
 $base-line-height: 1;
+
+/**
+ * Heading Variables.
+ *
+ * To make use of these: visit styleguide/_text.scss
+ */
+// Size.
 $h1-size:3.0;
 $h2-size:2.6;
 $h3-size:2.4;
 $h4-size:2.0;
 $h5-size:1.8;
 $h6-size:1.6;
-//Color
+
+// Color.
 $h1-color:$inherit;
 $h2-color:$inherit;
 $h3-color:$inherit;
 $h4-color:$inherit;
 $h5-color:$inherit;
 $h6-color:$inherit;
-//
+
+// Font Family.
 $h1-family:$times;
 $h2-family:$times;
 $h3-family:$times;

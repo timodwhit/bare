@@ -1,14 +1,8 @@
-////////////////////////
-// Mixins Partials
-//
-// All of your mixins should go in this file.
-////////////////////////
-
-////////////////////////
-// Mixins Partials
-//
-// All of your mixins should go in this file.
-////////////////////////
+/**
+ * Mixins Partials
+ *
+ * All of your mixins should go in this file.
+ */
 @mixin clear() {
     &:before, &:after {
         content: "\0020";
@@ -25,11 +19,14 @@
   #{$attribute}: ($size * 10) + px;
   #{$attribute}: $size + rem;
 }
+
 //This is a friendly mixin, not used unless you use it.
 @mixin sticky_footer($height:125px){
-  html, body{
-  height:100%;
+  html,
+  body {
+    height:100%;
   }
+
   #main-region {
     min-height: 100%;
     /* equal to footer height */
@@ -39,7 +36,9 @@
       display: block;
     }
   }
-  #footer, #main-region:after {
+
+  #footer,
+  #main-region:after {
     /* the after must be the same height as footer */
     height: $height;
   }

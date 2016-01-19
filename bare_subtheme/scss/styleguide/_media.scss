@@ -10,6 +10,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 @mixin responsive-iframe-wrapper {
   position: relative;
   // This is the ratio of the width to keep the proportions of the video

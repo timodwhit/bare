@@ -1,7 +1,7 @@
 name = Bare Subtheme
-description = 'This subtheme of the bare base theme. This theme is to act as a skelton for awesomeness'
+description = This subtheme of the bare base theme. This theme is to act as a skelton for awesomeness
 core = 7.x
-base = Bare
+base = bare
 
-stylesheets[all][] = 'css/style.css'
-stylesheets[print][] = 'css/print.css'
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css

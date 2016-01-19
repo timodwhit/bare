@@ -1,33 +1,38 @@
 /**
  * B
  */
-b{
+b {
   @extend strong;
 }
+
 /**
  * Delete
  */
-del{
+del {
 
 }
+
 /**
  * Emphasis
  */
-em{
+em {
   font-style: italic;
 }
+
 /**
  * Figcaption
  */
-figcaption{
+figcaption {
 
 }
+
 /**
  * Figure
  */
-figure{
+figure {
 
 }
+
 /**
  * hr
  */
@@ -37,76 +42,83 @@ hr {
   padding-bottom: -1px;
   margin: rhythm(1) 0;
 }
+
 /**
  * Italic
  */
-i{
+i {
   @extend em;
 }
+
 /**
  * Quote
  */
-q{
+q {
 
 }
+
 /**
  * Strikethrough
  */
-s{
+s {
 
 }
+
 /**
  * Small
  */
-small{
+small {
 
 }
+
 /**
  * Strong
  */
-strong{
+strong {
   font-weight: bold;
 }
+
 /**
  * Subscript
  */
-sub{
+sub {
 
 }
+
 /**
  * Superscript
  */
-sup{
+sup {
 
 }
+
 /**
  * Underline
  */
-u{
+u {
 
 }
+
 /**
  * Messages
  */
-.messages{
+.messages {
   /**
    * Status message
    */
-  &.status{
+  &.status {
 
   }
   /**
    * Warning message
    */
-  &.warning{
+  &.warning {
 
   }
   /**
    * Error message
    */
-  &.error{
+  &.error {
 
   }
 }
-
-

@@ -1,41 +1,46 @@
 /**
  * Unordered List
  */
-ul{
-  li{
+ul {
+  li {
 
   }
   /**
    * Unordered inline list with links
    */
-  &.inline{
-    li{
-      a{
+  &.inline {
+    li {
+      a {
 
       }
     }
   }
 }
+
 /**
  * Ordered List
  */
-ol{
-  li{
+ol {
+  li {
 
   }
 }
+
 /**
  * Both
  */
-ul, ol{
+ul,
+ol {
 
 }
+
 /**
  * List Item
  */
 li {
 
 }
+
 /**
  * Nested Items
  */
