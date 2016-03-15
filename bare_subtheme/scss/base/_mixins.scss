@@ -1,41 +1,51 @@
-/**
- * Mixins
- *
- * Most of your mixins go here.
- */
+////////////////
+// Mixins
+//
+// Most of your mixins go here.
+////////////////
 
 @mixin clear() {
-    &:before, &:after {
-        content: "\0020";
-        display: block;
-        height: 0;
-        overflow: hidden;
-    }
-    &:after {
-        clear: both;
-    }
+
+  &::before,
+  &::after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &::after {
+    clear: both;
+  }
 }
 
-@mixin rem($size, $attribute:font-size){
+@mixin rem($size, $attribute:font-size) {
   #{$attribute}: ($size * 10) + px;
   #{$attribute}: $size + rem;
 }
+
 //This is a friendly mixin, not used unless you use it.
-@mixin sticky_footer($height:125px){
-  html, body{
-  height:100%;
+@mixin sticky-footer($height: 125px) {
+
+  html,
+  body {
+    height: 100%;
   }
+
   main {
-    min-height: 100%;
-    /* equal to footer height */
+    // equal to footer height
     margin-bottom: -($height);
+    min-height: 100%;
   }
-  main:after {
-    content: "";
+
+  main::after {
+    content: '';
     display: block;
   }
-  footer, main:after {
-    /* .push must be the same height as footer */
+
+  footer,
+  main::after {
+    // .push must be the same height as footer
     height: $height;
   }
 }

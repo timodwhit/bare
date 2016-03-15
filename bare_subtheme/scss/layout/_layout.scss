@@ -1,15 +1,18 @@
-/**
- * Layouts Partials
- *
- * Layout and Design are not the same. Break it out and let it breath.
- *
- * Just like the beat.
- */
+//////////////////
+// Layouts Partials
+//
+// Layout and Design are not the same. Break it out and let it breath.
+//
+// Just like the beat.
+//////////////////
 
 // If you have questions about this: Ask Paul Irish.
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+*,
+*::before,
+*::after {
+  // Uncomment vendor prefixes, or replace with compass helper
+  // -moz-box-sizing: border-box;
+  // -webkit-box-sizing: border-box;
   box-sizing: border-box;
  }

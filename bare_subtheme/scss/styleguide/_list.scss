@@ -1,52 +1,46 @@
-/**
- * Unordered List
- */
-ul{
-  li{
+// scss-lint:disable EmptyRule
+
+// Unordered List
+ul {
+
+  li {
 
   }
-  /**
-   * Unordered inline list with links
-   */
-  &.inline{
-    li{
-      a{
 
-      }
+  // Unordered inline list with links
+  &.inline {
+    a {
+
     }
   }
 }
-/**
- * Ordered List
- */
-ol{
-  li{
+
+// Ordered List
+ol {
+
+  li {
 
   }
 }
-/**
- * Both
- */
-ul, ol{
 
+// Both
+ul,
+ol {
+
+  &.unstyle {
+
+  }
 }
-/**
- * List Item
- */
+
+// List Item
 li {
 
 }
-/**
- * Nested Items
- */
+
+// Nested Items
 ul ul,
 ul ol,
 ol ol,
 ol ul {
-
-}
-
-ul.unstyled,
-ol.unstyled {
 
 }
