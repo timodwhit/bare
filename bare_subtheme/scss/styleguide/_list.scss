@@ -1,13 +1,13 @@
-/**
- * Unordered List
- */
+//
+// Unordered List
+//
 ul {
   li {
 
   }
-  /**
-   * Unordered inline list with links
-   */
+  //
+  // Unordered inline list with links
+  //
   &.inline {
     li {
       a {
@@ -17,33 +17,33 @@ ul {
   }
 }
 
-/**
- * Ordered List
- */
+//
+// Ordered List
+//
 ol {
   li {
 
   }
 }
 
-/**
- * Both
- */
+//
+// Both
+//
 ul,
 ol {
 
 }
 
-/**
- * List Item
- */
+//
+// List Item
+//
 li {
 
 }
 
-/**
- * Nested Items
- */
+//
+// Nested Items
+//
 ul ul,
 ul ol,
 ol ol,

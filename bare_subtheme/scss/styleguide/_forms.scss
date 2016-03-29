@@ -1,14 +1,19 @@
-/**
-* Form elements: Inputs, buttons, etc.
-*/
+// scss-lint:disable EmptyRule
+// scss-lint:disable IdSelector
+// scss-lint:disable QualifyingElement
+
+// Form elements: Inputs, buttons, etc.
 
 form {
+
 }
 
 fieldset {
+
 }
 
 legend {
+
 }
 
 
@@ -28,6 +33,7 @@ textarea {
 }
 
 label {
+
 }
 
 .button,
@@ -35,7 +41,6 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-
 
   &:hover {
 

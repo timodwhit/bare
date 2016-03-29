@@ -1,41 +1,44 @@
-/**
- * B
- */
+
+// scss-lint:disable EmptyRule
+
+//
+// B
+//
 b {
   @extend strong;
 }
 
-/**
- * Delete
- */
+//
+// Delete
+//
 del {
 
 }
 
-/**
- * Emphasis
- */
+//
+// Emphasis
+//
 em {
   font-style: italic;
 }
 
-/**
- * Figcaption
- */
+//
+// Figcaption
+//
 figcaption {
 
 }
 
-/**
- * Figure
- */
+//
+// Figure
+//
 figure {
 
 }
 
-/**
- * hr
- */
+//
+// hr
+//
 hr {
   height: 1px;
   border: 1px solid #666;
@@ -43,81 +46,81 @@ hr {
   margin: rhythm(1) 0;
 }
 
-/**
- * Italic
- */
+//
+// Italic
+//
 i {
   @extend em;
 }
 
-/**
- * Quote
- */
+//
+// Quote
+//
 q {
 
 }
 
-/**
- * Strikethrough
- */
+//
+// Strikethrough
+//
 s {
 
 }
 
-/**
- * Small
- */
+//
+// Small
+//
 small {
 
 }
 
-/**
- * Strong
- */
+//
+// Strong
+//
 strong {
   font-weight: bold;
 }
 
-/**
- * Subscript
- */
+//
+// Subscript
+//
 sub {
 
 }
 
-/**
- * Superscript
- */
+//
+// Superscript
+//
 sup {
 
 }
 
-/**
- * Underline
- */
+//
+// Underline
+//
 u {
 
 }
 
-/**
- * Messages
- */
+//
+// Messages
+//
 .messages {
-  /**
-   * Status message
-   */
+  //
+  // Status message
+  //
   &.status {
 
   }
-  /**
-   * Warning message
-   */
+  //
+  // Warning message
+  //
   &.warning {
 
   }
-  /**
-   * Error message
-   */
+  //
+  // Error message
+  //
   &.error {
 
   }

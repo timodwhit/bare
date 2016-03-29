@@ -1,6 +1,6 @@
-/**
- * Link
- */
+// scss-lint:disable EmptyRule
+
+// Link
 a {
 
   &:visited {
@@ -16,36 +16,36 @@ a {
   }
 }
 
-/**
- * Links
- */
+//
+// Links
+//
 li a {
   &.active {
 
   }
 }
 
-/**
- * Mark, new
- */
+//
+// Mark, new
+//
 .marker {
   a {
 
   }
 }
 
-/**
- * More help link
- */
+//
+// More help link
+//
 .more-help-link {
   a {
 
   }
 }
 
- /**
- * More link
- */
+ //
+ // More link
+ //
 .more-link {
   a {
 
