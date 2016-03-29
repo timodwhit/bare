@@ -1,12 +1,12 @@
-/**
- * Style.scss
- *
- * This is the sheet that prints out all the styles. You should not need to add
- * to this, unless you add another folder in the scss folder root.
- *
- */
+////////////////
+// Style.scss
+//
+// This is the sheet that prints out all the styles. You should not need to add
+// to this, unless you add another folder in the scss folder root.
+//
+////////
 
-@import "base/base";
-@import "layout/layout";
-@import "styleguide/styleguide";
-@import "design/design";
+@import 'base/base';
+@import 'layout/layout';
+@import 'styleguide/styleguide';
+@import 'design/design';

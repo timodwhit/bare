@@ -1,12 +1,12 @@
+////////////////
+// Base
+//
+// This file is only meant to import the functions, mixins, variables, and extenables.
+//
+// If you have questions about any of those things, refer to the SCSS documentation.
+////////////////
 
-/**
- * Base
- *
- * This file is only meant to import the functions, mixins, variables, and extenables.
- *
- * If you have questions about any of those things, refer to the SCSS documentation.
- */
-
+@import 'libraries';
 @import 'variables';
 @import 'mixins';
 @import 'functions';

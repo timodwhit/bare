@@ -1,112 +1,96 @@
-/**
- * B
- */
-b{
-  @extend strong;
+// scss-lint:disable EmptyRule
+
+// b
+b {
+  @extend %strong;
 }
-/**
- * Delete
- */
-del{
+
+// Delete
+del {
 
 }
-/**
- * Emphasis
- */
-em{
+
+// Emphasis
+
+%em,
+em {
   font-style: italic;
 }
-/**
- * Figcaption
- */
-figcaption{
+
+// Figcaption
+figcaption {
 
 }
-/**
- * Figure
- */
-figure{
+
+// Figure
+figure {
 
 }
-/**
- * hr
- */
+
+// hr
 hr {
-  height: 1px;
+  // scss-lint:disable ColorVariable
   border: 1px solid #666;
-  padding-bottom: -1px;
+  height: 1px;
   margin: rhythm(1) 0;
+  padding-bottom: -1px;
 }
-/**
- * Italic
- */
-i{
-  @extend em;
+
+// Italic
+i {
+  @extend %em;
 }
-/**
- * Quote
- */
-q{
+
+// Quote
+q {
 
 }
-/**
- * Strikethrough
- */
-s{
+
+// Strikethrough
+s {
 
 }
-/**
- * Small
- */
-small{
+
+// Small
+small {
 
 }
-/**
- * Strong
- */
-strong{
+
+// Strong
+%strong,
+strong {
   font-weight: bold;
 }
-/**
- * Subscript
- */
-sub{
+
+// Subscript
+sub {
 
 }
-/**
- * Superscript
- */
-sup{
+
+// Superscript
+sup {
 
 }
-/**
- * Underline
- */
-u{
+
+// Underline
+u {
 
 }
-/**
- * Messages
- */
-.messages{
-  /**
-   * Status message
-   */
-  &.status{
 
+// Message
+.messages {
+  // Status message
+  &.status {
+    //
   }
-  /**
-   * Warning message
-   */
-  &.warning{
 
+  // Warning message
+  &.warning {
+    //
   }
-  /**
-   * Error message
-   */
-  &.error{
 
+  // Error message
+  &.error {
+    //
   }
 }
-
-

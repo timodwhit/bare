@@ -8,34 +8,43 @@
 //
 // This layout requires Singularity.gs as a compass gem.
 ////////////////////////
-%container{
-  width:$container_width;
-  margin:0 auto; //Center the page, this may not be wanted.
+
+%container {
+  margin: 0 auto; //Center the page, this may not be wanted.
+  width: $container-width;
 }
-.container{
+
+.container {
   @extend %container;
   @include layout($grids, $gutters, 'isolation');
 }
+
 //The sidebar Locations are static
-.l-sidebar-first{
-  @include grid-span($sidebar_first_columns,1);
+.l-sidebar-first {
+  @include grid-span($sidebar-first-columns, 1);
 }
-.l-sidebar-second{
-  @include grid-span($sidebar_second_columns,$grids - $sidebar_first_columns + 1);
+
+.l-sidebar-second {
+  @include grid-span($sidebar-second-columns, $grids - $sidebar-first-columns + 1);
 }
+
 //Create different positionings of Main
-main{
-  .sidebar-first &{
-    @include grid-span($grids - $sidebar_first_columns,$sidebar_first_columns + 1);
+main {
+
+  .sidebar-first & {
+    @include grid-span($grids - $sidebar-first-columns, $sidebar-first-columns + 1);
   }
-  .sidebar-second &{
-    @include grid-span($grids - $sidebar_second_columns,1);
+
+  .sidebar-second & {
+    @include grid-span($grids - $sidebar-second-columns, 1);
   }
-  .two-sidebars &{
-    @include grid-span($grids - $sidebar_first_columns - $sidebar_second_columns ,$sidebar_first_columns + 1);
+
+  .two-sidebars & {
+    @include grid-span($grids - $sidebar-first-columns - $sidebar-second-columns, $sidebar-first-columns + 1);
   }
 }
 
-header, footer{
+header,
+footer {
   @include grid-span($grids, 1);
 }
