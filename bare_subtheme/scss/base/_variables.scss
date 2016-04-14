@@ -5,6 +5,7 @@ $inherit: inherit;
 
 // Colors
 $white: #fff;
+$black: #000;
 $gray-90: lighten($black, .1);
 $gray-80: lighten($black, .2);
 $gray-70: lighten($black, .3);
@@ -14,7 +15,6 @@ $gray-40: lighten($black, .6);
 $gray-30: lighten($black, .7);
 $gray-20: lighten($black, .8);
 $gray-10: lighten($black, .9);
-$black: #000;
 
 //
 //  Font Sizes, Color, Family

@@ -20,7 +20,7 @@ module.exports = function (grunt) {
         files: [paths.css + '/{,**/}*.css']
       },
       images: {
-        files: ['images/**'],
+        files: ['images/**, !images/grunticon/**, !images/min'],
         tasks: ['imagemin', 'svgmin', 'grunticon']
       },
       js: {
@@ -78,15 +78,15 @@ module.exports = function (grunt) {
     },
 
     imagemin: {
-      dist: {
+      dynamic: {
         options: {
           optimizationLevel: 3
         },
         files: [{
           expand: true,
-          cwd: 'images',
-          src: ['**/*.png', '**/*.jpg'],
-          dest: paths.img
+          cwd: 'images/',
+          src: ['**/*.{png,jpg,gif}, !grunticon/**.png, !min/**.{png,jpg,gif}'],
+          dest: paths.img + '/min/'
         }]
       }
     },
@@ -96,8 +96,8 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'images',
-          src: '**/*.svg',
-          dest: paths.img
+          src: ['**/*.svg, !min/*.svg'],
+          dest: paths.img + '/min/'
         }]
       }
     },
@@ -107,7 +107,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'images',
-          src: ['**/*.svg'],
+          src: ['**/*.svg, !min/*.svg'],
           dest: paths.img + '/grunticon'
         }]
       }
@@ -231,11 +231,15 @@ module.exports = function (grunt) {
     },
     parallel: {
       assets: {
-        grunt: true,
+        options: {
+          grunt: true
+        },
         tasks: ['imagemin', 'svgmin', 'uglify:dist', 'copy:dist', 'modernizr:dist', 'grunticon:myIcons']
       },
       compass: {
-        grunt: true,
+        options: {
+          grunt: true
+        },
         tasks: ['scsslint', 'compass:dev']
       }
     }
